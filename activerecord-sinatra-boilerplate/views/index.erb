@@ -1,0 +1,9 @@
+<h1>My cool restaurant app</h1>
+
+<ul>
+    <% @restaurants.each do |restaurant| %>
+        <li><a href="/restaurants/<%= restaurant.id %>"><%= restaurant.name %></li>
+    <% end %>
+</ul>
+
+# /restaurants/:id 
